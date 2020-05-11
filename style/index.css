@@ -1,4 +1,19 @@
 
-.header{
-    max-height: fit-content;
+
+.container{
+    position: absolute;
+  
+    top: 50%;
+    -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translateX(40%);
+  transform: translateX(40%);
+    width: 100%;
+    
+}
+
+.buttoncentre{
+    margin: 0px 10px;
+    padding: 10px 20px;
+    background-color: orange;
 }
