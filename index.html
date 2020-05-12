@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="style/index.css"/>
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
+    
 
 </head>
 
@@ -18,15 +21,51 @@
     <diV class="containerhead">
 
         <div class="head-left">
-            <h1>ScriBBler</h1>
+            <h1 class="heading">ScriBBler</h1>
             Explore, Imagine, Create
 
         </div>
 
         <div class="head-right">
             <div class="button1">
-            <button class="headbutton">Sign Up</button>
+            <button class="headbutton" onclick="document.getElementById('signup').style.display='block'" style="width:auto;">Sign Up</button>
             <button class="headbutton">Sign In</button>
+
+
+            <div id="signup" class="modal"> 
+                
+                <form class="form1"> 
+                         
+                        <div class="headmod">
+                            <div class="headmodleft">
+                                <h2>Get Started</h2>
+                        </div>
+                        <div class="headmodright">
+                            <i class="fa fa-times fa-lg" aria-hidden="true" onclick="document.getElementById('signup').style.display='none'"></i>
+
+                        </div>
+
+                        </div>
+
+                        <label><b>Name</b></label> 
+                        <input type="text" placeholder="Enter your name"  > 
+
+                        <label><b>Username</b></label> 
+                        <input type="text" placeholder="Enter your username"  > 
+          
+                        <label><b>Password</b></label> 
+                        <input type="password" placeholder="Enter Password"  > 
+          
+                        <label><b>Confirm Password</b></label> 
+                        <input type="password" placeholder="Re-enter Password"  > 
+                        
+                            <button type="submit" class="buttonmodal">Sign Up</button> 
+                        
+                    
+                </form> 
+            </div> 
+
+
         </div>
 
         </div>
@@ -45,7 +84,9 @@
 
 
 
-
+<script src="https://kit.fontawesome.com/a7b427131e.js" crossorigin="anonymous"></script>
+<script src="scripts/common.js" ></script>
+<script src="scripts/index.js" ></script>
 
 </body>
 
